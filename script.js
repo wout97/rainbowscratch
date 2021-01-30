@@ -161,19 +161,19 @@ function runFunction(){
       currentY = Math.floor(currentY)
 
       if(currentX > x2){
-        currentX = currentX -1
+        currentX = currentX -2
       }
       if(currentY > y2){
-        currentY = currentY -1
+        currentY = currentY -2
       }
       if(currentX < x2){
-        currentX = currentX +1
+        currentX = currentX +2
       }
       if(currentY < y2){
-        currentY = currentY +1
+        currentY = currentY +2
       }
     
-       if(currentX == x2 && currentY == y2){
+       if((currentX == x2 || currentX == (x2 - 1) || currentX == (x2 + 1) || currentX == (x2 - 3)) && (currentY == y2 || currentY == (y2 - 1) ||currentY == (y2 + 1) || currentY == (y2 - 3))){
            x2 = Math.floor(Math.random() * window.innerWidth); 
    y2 = Math.floor(Math.random() * window.innerHeight);
 

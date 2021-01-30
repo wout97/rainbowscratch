@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body style="background-color:black;">
+  </body>
+  <div class="middle" style="" id="settings">
+    <span style="color:white; font-size:large"><b>Rainbow fever</b></span>
+      <div>
+          <label style="color:white;" for="color"> 
+            RainbowEffect</label>
+
+     <input onclick="rainbow();" type="checkbox" id="color" name="color" value="color" checked><br>
+     <label style="color:white;" for="man"> 
+            Manual control</label>
+
+     <input onclick="manual();" type="checkbox" id="man" name="color" value="color" ><br>
+<span id="colorP" style="display:none" >
+   <label for="colorPi" style="color:white">Color</label>
+    <input  id="colorPi"  type="color"  name="body"
+            value="#00FF16">
+   
+</span><br>
+ <label for="colorB" style="color:white">Background</label>
+    <input  id="colorB"  type="color"  name="bodyb"
+            value="#808080"><br>
+<label style="color:white" for="vol">Size</label>
+  <input value="3" type="range" id="vol" name="vol" min="1" max="50">
+  <br>
+<label style="color:white" for="speed">Speed</label>
+  <input value="9" type="range" id="speed" name="speed" step="1" min="1" max="10">
+  
+
+</div>
+  </div>
+   <div style="position: absolute; bottom: 5px; color:grey; font-size:10px">
+Voor mijn lieve opa † 26/01/2021    </div>
+      <script src="script.js"></script>
+
+</html>
